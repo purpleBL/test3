@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  user-select: none;
+}
+
+.text {
+  padding: 20px;
+  font-size: 24px;
+  line-height: .8;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 76px;
+  border-radius: 50%;
+  /* background: peachpuff; */
+  overflow: hidden;
+  /* border: solid 2px black; */
+}
+
+.box-svg {
+  width: 150px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.sun {
+  /* padding: 10px; */
+  /* margin-left: 40px; */
+  stroke: #4d4d4d;
+  margin-bottom: 10px;
+  transform: rotateZ(0deg);
+  animation: sun 20s linear infinite;
+}
+.sun circle {
+  fill: #ff6a34;
+}
+
+@keyframes sun {
+  100% {transform: rotateZ(360deg);}
+}
+
+
+.wave {
+  height: 20px;
+  stroke: #183df8;
+  stroke-width: 2px;
+  transform: translate(-67px);
+  animation: wave-tr 10s linear infinite;
+}
+.wave2 {
+  height: 20px;
+  stroke: #183df8;
+  stroke-width: 2px;
+  transform: translate(-67px);
+  animation: wave-tr 8s linear infinite;
+}
+.wave3 {
+  height: 20px;
+  stroke: #183df8;
+  stroke-width: 2px;
+  transform: translate(-67px);
+  animation: wave-tr 5s linear infinite;
+}
+
+
+@keyframes wave-tr {
+  100% {transform: translate(0px);}
+}
